@@ -84,7 +84,7 @@
     width: 270px;
     height: 270px;
     /*padding: 5px;*/
-    border: solid 1px;
+    /*border: solid 1px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,18 +97,17 @@
     top:20px;
     left: 120px;
 }
-.product .checkbox:checked + .image-container {
+
+.image-product{
+  border:solid 1px gray;
+  border-radius:20px
+}
+
+.items-offered .checkbox:checked + .item-product .image-product{
   border: 2px solid #3498db;
 }
 
-.items-offered .input-checkbox:checked + .image-product{
-  border: 50px solid #3498db;
-}
-
-.product{
-  border:solid 2px;
-}
-.image-container{
-  border:solid 2px gray;
-  /*background-color:gray;*/
+.checkbox:checked  {
+  background-color: #3498db; /* Cor da caixa de seleção quando o checkbox é selecionado */
+  border-color: #3498db; /* Cor da borda da caixa de seleção quando o checkbox é selecionado */
 }
