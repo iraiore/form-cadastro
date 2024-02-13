@@ -9,7 +9,7 @@
 
   body{
     width: 100%;
-    height: 250vh;
+    height: 180vh;
     display: flex;
     /*align-items: center;*/
     justify-content: center;
@@ -21,7 +21,7 @@
     width: 95%;
     padding: 20px;
     background-color:white;
-    border: solid 1px black;
+   /* border: solid 1px black;*/
   }
  
   .input-group-1{
@@ -84,30 +84,90 @@
     width: 270px;
     height: 270px;
     /*padding: 5px;*/
-    /*border: solid 1px;*/
+    border: solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /*background-color:lightblue;*/
     border-radius: 20px;
+    border-color:gray;
+    transition: background-color 0.3s; /* Adicionando transição de cor de fundo */
+  }
+  .items-offered:hover {
+    background-color: #f3d9d9; /* Cinza claro ao passar o mouse */
   }
   .items-offered .input-checkbox{
     position: relative;
     border-radius: 20px;
     top:20px;
     left: 120px;
+    border: solid 2px gray;
+    width: 30px;
+    height: 30px;
+    background-color:lightgreen;
+
+}
+ /**************ALTERING DIV COLOR***************/
+
+.items-offered input[type="checkbox"]:checked + .input-checkbox {
+  background-color: blue; 
+  border-color: blue; 
+  border:50px;
+}
+/*.items-offered .input-checkbox input[type="checkbox"]:checked {
+  background-color: blue; 
+  border-color: blue;
+}*/
+/*.items-offered input[type="checkbox"]:checked {
+  background-color: blue; 
+  border-color: blue;
+}*/
+#iphone:checked {
+  background-color: blue; 
+  border-color: blue;
+}
+.items-offered #iphone:checked {
+  background-color: blue; 
+  border-color: blue;
 }
 
-.image-product{
-  border:solid 1px gray;
-  border-radius:20px
+.buttons{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  /*background-color:gold;*/
 }
-
-.items-offered .checkbox:checked + .item-product .image-product{
-  border: 2px solid #3498db;
+.buttons .clear-form{
+  width: 35%;
 }
+.buttons .submit{
+  width: 63%;
+}
+.buttons .clear-form .button{
+  width: 100%;
+  background-color:white;
+  height: 70px;
+  border-radius:10px;
 
-.checkbox:checked  {
-  background-color: #3498db; /* Cor da caixa de seleção quando o checkbox é selecionado */
-  border-color: #3498db; /* Cor da borda da caixa de seleção quando o checkbox é selecionado */
+}
+.buttons .submit .button{
+  width: 100%;
+  background-color:rgb(65, 63, 63);
+  height: 70px;
+  border-radius:10px;
+
+}
+.buttons .clear-form a{
+  font-size: 20px;
+  text-decoration: none;
+  color:black ;
+}
+.buttons .submit a{
+  font-size: 20px;
+  text-decoration: none;
+  color:white ;
+  font-weight: bolder;
+}
+.button{
+  border:solid 2px rgb(218, 210, 210);
 }
