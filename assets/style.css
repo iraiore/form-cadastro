@@ -114,14 +114,14 @@
   border-color: blue; 
   border:50px;
 }
-/*.items-offered .input-checkbox input[type="checkbox"]:checked {
+.items-offered .input-checkbox input[type="checkbox"]:checked {
   background-color: blue; 
   border-color: blue;
-}*/
-/*.items-offered input[type="checkbox"]:checked {
+}
+.items-offered input[type="checkbox"]:checked {
   background-color: blue; 
   border-color: blue;
-}*/
+}
 #iphone:checked {
   background-color: blue; 
   border-color: blue;
