@@ -101,34 +101,10 @@
     border-radius: 20px;
     top:20px;
     left: 120px;
-    border: solid 2px gray;
-    width: 30px;
-    height: 30px;
-    background-color:lightgreen;
+}
 
-}
- /**************ALTERING DIV COLOR***************/
-
-.items-offered input[type="checkbox"]:checked + .input-checkbox {
-  background-color: blue; 
-  border-color: blue; 
-  border:50px;
-}
-.items-offered .input-checkbox input[type="checkbox"]:checked {
-  background-color: blue; 
-  border-color: blue;
-}
-.items-offered input[type="checkbox"]:checked {
-  background-color: blue; 
-  border-color: blue;
-}
-#iphone:checked {
-  background-color: blue; 
-  border-color: blue;
-}
-.items-offered #iphone:checked {
-  background-color: blue; 
-  border-color: blue;
+.items-offered:has(input[type="checkbox"]:checked) {
+  border:solid 2px rgb(20, 20, 204);
 }
 
 .buttons{
